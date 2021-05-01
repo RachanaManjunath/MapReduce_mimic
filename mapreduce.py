@@ -3,10 +3,6 @@
 
 # ## **Data Cleaning Function**
 # 
-# ---
-# 
-# 
-
 # In[ ]:
 
 
@@ -35,15 +31,8 @@ def dataclean():
 #Verify clean text file
 print(open('Pride_and_Prejudice.txt').read())
 
-
 # ## **Data Split Function**
-# 
-# ---
-# 
-# 
-
 # In[126]:
-
 
 def split():
 
@@ -66,13 +55,7 @@ print(part2)
 
 
 # ## **Mapper Function**
-# 
-# ---
-# 
-# 
-
 # In[127]:
-
 
 def mapperfunction(splitparts):
   out = []
@@ -89,16 +72,7 @@ int_KV_2 = mapperfunction(part2)
 all_KV_pairs = int_KV_1 + int_KV_2 #add kyey-value pairs from part1 and part2
 print(all_KV_pairs) #all the key value pairs
  
-
-
-# ## **Sort Function**
-# 
-# ---
-# 
-# 
-
 # In[128]:
-
 
 def sortfunction(KV):
   
@@ -113,13 +87,7 @@ print(sorted_KV) #sorted key value pairs
 
 
 # ## **Partition Function**
-# 
-# ---
-# 
-# 
-
 # In[129]:
-
 
 def partition(inp):
 
@@ -138,13 +106,7 @@ print(ntoz)
 
 
 # ## **Reducer Function**
-# 
-# ---
-# 
-# 
-
 # In[130]:
-
 
 def reducer(x):
     
@@ -170,15 +132,8 @@ output2 = reducer(ntoz)
 print(output1) #verify
 print(output2) #verify       
 
-
 # ## **Main Function**
-# 
-# ---
-# 
-# 
-
 # In[131]:
-
 
 def main(reducer_op1,reducer_op2):
 
@@ -198,8 +153,3 @@ def main(reducer_op1,reducer_op2):
 
 
 main(output1,output2)
-
-
-
-
-
